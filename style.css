@@ -7,7 +7,7 @@
     font-family: 'Open Sans',sans-serif;
 }
 
-.coming_soon, .slide, .arrow, .product, .footer, .social-media, .line, .footer .des, .form, .submit-button, .menu{
+.coming_soon, .slide, .arrow, .product, .footer, .social-media, .line, .footer .des, .footer .container, .submit-button, .menu{
     display: flex;
     justify-content: center;
 }
@@ -142,17 +142,34 @@ form input {
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    margin: 50px 20px;
 }
 
 
 .article img {
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height:550px;
+    margin: 20px;
+}
+
+.article div {
+    width: 50%;
+    margin: 60px 20px;
 }
 
 .article p {
     text-align: justify;
-    width: 40%;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.signature {
+    font-family: 'Allura', cursive;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: rgb(221, 144, 151);
+    padding: 10px;
 }
 
 .slide {
@@ -191,7 +208,8 @@ form input {
 }
 
 .product {
-    margin: 80px;
+    margin-top: 80px;
+    margin-bottom: 40px;
 }
 
 .product img, .product div {
@@ -229,41 +247,92 @@ form input {
     font-size: 0.95rem;
 }
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 700px;
+}
+
+.footer .container {
+    margin: 100px 40px;
+}
 
 hr {
     height: 10px;
-    width: 80%;
+    width: 90%;
     background-color: rgb(221, 181, 186);
-    border-color: white;
+    border:  1px solid rgb(221, 181, 186);
 }
 
-.suscribe {
+.suscribe, .suscribe-sec {
     width: 50%;
     height: 700px;
 }
 
+
 .suscribe-text {
-    font-size: 3.1rem;
+    font-size: 4.1rem;
     font-family: 'Playfair Display', serif;
     font-style: italic;
     text-align: center;
+    font-weight: 900;
+    padding: 20px;
+    letter-spacing: 3px;
 }
 
 .footer .des p {
     text-align: center;
-    width: 60%;
+    width: 65%;
+    font-size: 0.9rem;
 }
 
 .form form {
-    width: 80%;
+    width: 100%;
+    margin: 10px;
+}
+
+.form {
+    margin-top: 40px;
 }
 
 .footer-form {
     border: 1px solid grey;
     border-radius: 0px;
-    width: 210px;
+    width: 47%;
 }
 
 .submit {
     width: 120px;
 }
+
+.social-media {
+    margin: 40px;
+}
+
+.social-media img {
+    margin: 10px;
+}
+
+
+.bottom p {
+    padding: 45px;
+    background-color: #333333;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+    color: white;
+}
+
+.bottom a {
+    background-color: #333333;
+    color: #adcce9;
+}
+
+.bottom a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+
